@@ -1,0 +1,66 @@
+<html><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/demo.css">
+        <link rel="stylesheet" type="text/css" href="css/component.css">
+        <link rel="stylesheet" href="skeleton/css/skeleton.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+
+        <script src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="imp2.css" rel="stylesheet" type="text/css">
+    </head>
+    <body data-spy="scroll">
+        <div class="cover">
+            <div class="navbar"></div>
+            <div class="background-image-fixed cover-image" style="background-image : url('https://scontent-ord1-1.xx.fbcdn.net/hphotos-xfl1/t31.0-8/12998331_10206632934365411_456285242474819045_o.jpg')"></div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-primary">How to interpret our visualization</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="table">
+      <button class="drop" id="2014button" onclick="refresh('2014', '19.3')" value='change text'>2014</button>
+      <button class="drop1" id="2015button" onclick="refresh('2015', '20.4')" value='change text'>2015</button>
+      <br>
+      <button class="drop2" id="animateButton" onclick="drop()">Animate</button>
+      <h1></h1>
+        <p>Average age: <b id='name'>19.3</b></p>
+        <p>Most popular crimes: MIP</p>
+        <p>Best agency: CPD</p>
+      <ul class="legend">
+        <li><span class="uiuc"></span> UIUC</li><br>
+        <li><span class="illinois-state"></span> Illinois State Univ</li><br>
+        <li><span class="loyola"></span> Loyola</li><br>
+        <li><span class="chicago"></span> Chicago</li><br>
+        <li><span class="champaign"></span> Champaign</li><br>
+        <li><span class="parkland"></span> Parkland College</li><br>
+        <li><span class="other"></span> Other</li>
+      </ul>
+    </div>
+    <div id="map"></div>
+
+    <script type="text/javascript"></script>
+  
+    <script src="render_map.js"></script>
+    <script src="data.js"></script>
+    <script src="map_styles.js"></script>
+    <script src="bars.js"></script>
+    <script src="collegeColors.js"></script>
+    
+    <script async defer 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhMsGD6G9tfBml3RgABBDIRSQilth7xu0&libraries=places&callback=initMap"></script>
+  </body>
